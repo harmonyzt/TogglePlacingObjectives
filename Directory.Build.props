@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <GameRoot Condition="'$(GameRoot)' == ''">D:\401SPT</GameRoot>
+  </PropertyGroup>
+</Project>
