@@ -9,7 +9,7 @@ namespace TogglePlacingObjectives;
 [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
 public sealed class Plugin : BaseUnityPlugin
 {
-    internal const string PluginGuid = "com.local.toggleplacingobjectives";
+    internal const string PluginGuid = "com.harmonyzt.toggleplacingobjectives";
     internal const string PluginName = "Toggle Placing Objectives";
     internal const string PluginVersion = "1.0.0";
 
@@ -41,7 +41,7 @@ public sealed class Plugin : BaseUnityPlugin
         {
             _harmony.PatchAll(typeof(Plugin).Assembly);
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             _harmony.UnpatchSelf();
         }
